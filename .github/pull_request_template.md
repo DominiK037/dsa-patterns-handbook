@@ -11,29 +11,9 @@ Examples:
 
 ## Summary
 - What is changing and why?
-- Link to context (issue/discussion) if any.
 
 ## Changes
 - [ ] List key changes here
-
-## Type
-- [ ] docs
-- [ ] feat
-- [ ] fix
-- [ ] refactor
-- [ ] chore
-
-## Scope
-- [ ] arrays
-- [ ] binarysearch
-- [ ] dp
-- [ ] graphs
-- [ ] linkedlist
-- [ ] queues
-- [ ] stacks
-- [ ] strings
-- [ ] trees
-- [ ] repo
 
 ## Checklist
 - [ ] Branch name follows guidelines (e.g., docs/..., pattern/...)
@@ -43,6 +23,6 @@ Examples:
 - [ ] Included time/space complexity when adding patterns
 - [ ] Self-reviewed and formatted
 
-## Notes
-Optional: alternatives considered, future follow-ups, or caveats.
+
+### Optional: Your suggestions for me / Ideas to work upon, TOGETHER!
 
