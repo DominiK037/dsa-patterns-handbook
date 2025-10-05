@@ -1,6 +1,6 @@
 ## PR Title
 
-<type>(<scope?>): <short description>
+(type) (scope): short description
 
 Examples:
 - docs(readme): document Git guidelines and pattern template
@@ -25,4 +25,3 @@ Examples:
 
 
 ### Optional: Your suggestions for me / Ideas to work upon, TOGETHER!
-

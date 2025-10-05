@@ -1,4 +1,4 @@
-# Context
+## Context
 
 A curated collection of Data Structures & Algorithms patterns implemented in Java and documented with step-by-step explanations.  
 
@@ -8,9 +8,9 @@ This repository mainly serves as a personal learning & revising resource.
 
 Key points
 - 
-- [Goals](#goals) (Core focus)
 - [Contribution Guide](#git-guidelines) (Contribution guidelines)
 - [Pattern Template](#pattern-template) (Template to get started)
+- [Goals](#goals) (Core focus)
 - [File Structure Guidance](#repository-structure) (where is what)
 
 ---
@@ -18,35 +18,37 @@ Key points
 ## Get Started
 1. Clone repository:
 
-
-    git clone https://github.com/<your-username>/dsa-patterns-handbook.git
+   `git clone https://github.com/<your-username>/dsa-patterns-handbook.git`
 
 
 2. Navigate to local repository
 
+   `cd dsa-patterns-handbook`
 
-    cd dsa-patterns-handbook
 
 3. Create a new branch
 
+   `git checkout -b <branch-name-with-set-conventions>`
 
-    git checkout -b <branch-name-with-set-conventions>
 
 4. Make changes & commit
 
-
+   ````markdown
     git add .
 
     git commit -m "<commit-message-with-set-conventions>"
+   ````
+
 
 5. Push your changes & additions to this repository
 
-
+   ````markdown
     # Add a remote repo (if haven't already)
     git remote add origin https://github.com/<your-username>/dsa-patterns-handbook.git
 
     # Push the changes made
-    git push -u origin main           
+    git push -u origin main
+   ````           
 
 6. Make a Pull Request with your own style, so I can copy your style if I like it😏
 
@@ -54,17 +56,6 @@ Key points
 7. Wow, Congratulations🥂🎉
 
     You just made a contribution to save the **Humanity**!
----
-
-## Goals
-To be smooth in pattern recognition and algorithmic reasoning rather than memorization.  
-
-Every problem included here focuses on:
-- Identifying the underlying pattern.
-- Explaining the reasoning path.
-- Writing clean, optimized code.
-- Time & Space complexities.
-
 ---
 
 ## Git Guidelines
@@ -101,12 +92,12 @@ Examples:
 
 ### Commit Message Conventions
 
-We follow the Conventional Commits format, simplified for algorithmic documentation.
+- We follow the Conventional Commits format, simplified for algorithmic documentation.
 
-Structure:
-
-`<type>(<scope>): <short description>`
-`<optional-details/explanation>`
+   ````markdown
+    <type>(<scope>): <short description>
+    <optional-details/explanation>
+   ````
 
 ---
 
@@ -139,9 +130,22 @@ Use this template when adding new patterns or problems.
 ````
 ---
 
+## Goals
+To be smooth in pattern recognition and algorithmic reasoning rather than memorization.
+
+Every problem included here focuses on:
+- Identifying the underlying pattern.
+- Explaining the reasoning path.
+- Writing clean, optimized code.
+- Time & Space complexities.
+
+---
+
 ## Repository Structure
 > This will keep changing as per my learnings (Every day)
+
 ````markdown
+
 dsa-patterns-handbook/
 ├── src/
 │   └── main/
