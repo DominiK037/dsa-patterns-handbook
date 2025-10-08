@@ -1,6 +1,5 @@
 class MergeIntervals56 {
     public static int[][] merge(int[][] intervals) {
-
         //  Sort intervals with their startTime.
         Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
 
