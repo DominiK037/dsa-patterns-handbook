@@ -53,6 +53,8 @@
 
 1. [chanda-abdul-github-repository](https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews/blob/main/%E2%9C%85%20%20Pattern%2004%20:%20Merge%20Intervals.md)
 2. Draw on notebook/whiteboard for better understanding **(Important)**
-4. [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) (56-Medium | Solution Available✅)
-5. [build-visualisation-from-neetcode-approach](https://youtu.be/44H3cEC2fFM?si=fC9UFZBUmgaHmyev)
-6. [Insert Interval](https://leetcode.com/problems/insert-interval/description/) (57-Medium | Solution Available✅)
+3. [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) (56-Medium | Solution Available✅)
+4. [build-visualisation-from-neetcode-approach](https://youtu.be/44H3cEC2fFM?si=fC9UFZBUmgaHmyev)
+5. [Insert Interval](https://leetcode.com/problems/insert-interval/description/) (57-Medium | Solution Available✅)
+6. [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) (435-Medium | Solution Available✅)
+7. [Interval List Intersection](https://leetcode.com/problems/interval-list-intersections/description/) (986-Medium | Solution Available✅)
