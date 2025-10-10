@@ -1,5 +1,5 @@
 class IntervalListIntersections986 {
-    public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
+    public static int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
         List<int[]> intersections = new ArrayList<>();
 
         int firstPointer = 0;
