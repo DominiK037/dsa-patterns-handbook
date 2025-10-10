@@ -58,3 +58,5 @@
 5. [Insert Interval](https://leetcode.com/problems/insert-interval/description/) (57-Medium | Solution Available✅)
 6. [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) (435-Medium | Solution Available✅)
 7. [Interval List Intersection](https://leetcode.com/problems/interval-list-intersections/description/) (986-Medium | Solution Available✅)
+8. [Meeting Room](https://leetcode.com/problems/meeting-rooms/description/) (252-Easy | LC Premium | Solution Available✅)
+9. [Meeting Room I](https://leetcode.com/problems/meeting-rooms-ii/description/) (253-Medium | LC Premium | Solution Available✅)

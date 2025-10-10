@@ -29,6 +29,6 @@ class NonOverlappingIntervals435 {
 //      Sorting all intervals by start time: O(n log n)
 //      We are only visiting each interval once with the help of index so: O(n)
 
-//  Space complexity: O(1)
-//      Sorting uses memory, but since we have literal value(int) small constant extra space would be needed: O(1)
+//  Space complexity: O(n)
+//      Sorting uses memory, but since we have literal value(int) small constant extra space would be needed but still: O(n)
 //      If we had to sort objects then space complexity would be: O(n)
