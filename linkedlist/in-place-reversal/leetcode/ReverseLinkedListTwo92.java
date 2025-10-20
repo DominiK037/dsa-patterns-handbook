@@ -1,21 +1,8 @@
-/**
-public class ListNode {
-    int value;
-    ListNode next;
+import linkedlist.ListNode;
 
-    public ListNode(int value) {
-        this.value = value;
-    }
-
-    public ListNode(int value, ListNode next) {
-        this.value = value;
-        this.next = next;
-    }
-}
- **/
-
-public class ReverseLinkedListTwo92 {
+class ReverseLinkedListTwo92 {
     public static ListNode reverseBetween(ListNode head, int left, int right) {
+
         ListNode dummy = new ListNode(0);
         ListNode currentNode = head;
         ListNode firstPartLastNode = dummy;
@@ -48,9 +35,13 @@ public class ReverseLinkedListTwo92 {
         }
 
         //  Connect part 2 & part 3
+        //  Not connecting part 2 first, because we would be changing reversed node's next pointer.
         firstPartLastNode.next.next = currentNode;
         firstPartLastNode.next = previousNode;
 
         return dummy.next;
     }
 }
+
+//  Time Complexity: O(N) where N is the number of nodes in the linked list.
+//  Space Complexity: O(1) as we are not using any extra space, apart from a few node objects which are also considered constant space.
