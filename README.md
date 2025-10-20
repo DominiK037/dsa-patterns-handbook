@@ -39,22 +39,22 @@ I have followed multiple resources to get to my current grasp & understanding ov
 
 >I found this GOD-LIKE approach in this [GOAT'ED Github Repository](https://github.com/yangshun/tech-interview-handbook). I have also made few good changes which suited my learning style, I'd suggest to have your own opinions on this!
 
-| Topic              | Priority  |
-|--------------------|-----------|
-| Array              | **High** |
-| String             | **High** |
-| Hash Table         | **Mid** |
-| Sorting            | **High** |
-| Binary Search      | **High** |
-| Linked List        | **Mid** |
-| Recursion          | **Mid** |
-| Stack              | **Mid** |
-| Tree               | **High** |
-| Graph              | **High** |
-| Heap               | **Mid** |
-| Queue              | **Mid** |
-| Trie               | **Mid** |
-| Dynamic Programming| **Low** |
+| Topic | Priority |
+|--------|-----------|
+| [Array](array/Array.md) | **High*** |
+| [String](string/String.md) | **High*** |
+| [Hash Table](hashtable/HashTable.md) | **Mid** |
+| [Sorting](sorting/Sorting.md) | **High*** |
+| [Binary Search](binarysearch/BinarySearch.md) | **High** |
+| [Linked List](linkedlist/LinkedList.md) | **Mid** |
+| [Recursion](recursion/Recursion.md) | **Mid** |
+| [Stack](stack/Stack.md) | **Mid** |
+| [Tree](tree/Tree.md) | **High** |
+| [Graph](graph/Graph.md) | **High** |
+| [Heap](heap/Heap.md) | **Mid** |
+| [Queue](queue/Queue.md) | **Mid** |
+| [Trie](trie/Trie.md) | **Mid** |
+| [Dynamic Programming](dynamicprogramming/DynamicProgramming.md) | **Low** |
 
 
 ---
