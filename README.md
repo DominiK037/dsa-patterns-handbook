@@ -1,24 +1,70 @@
 ## Context
 
-A curated collection of Data Structures & Algorithms patterns implemented in Java and documented with step-by-step explanations.  
+This repository is my personal collection of Data Structures & Algorithms (DSA) concepts and common problem-solving patterns, explained in a way that’s useful for interview preparation.
 
-This repository mainly serves as a personal learning & revising resource.
+> I hope below context will help me gaining your sympathy (JK). You may see the best resources you can get for the DSA & an Interview Approach OR you may not like SOME or NONE!
 
-> You can use this repository to understand the patterns to solve DSA questions.
+It mainly serves as a learning and revision guide for myself, but it can also help you, who's preparing for the technical interviews unlike others who are busy chasing girls.
 
-Key points
-- 
-- [Contribution Guide](#git-guidelines) (Contribution guidelines)
-- [Pattern Template](#pattern-template) (Template to get started)
-- [Goals](#goals) (Core focus)
-- [File Structure Guidance](#repository-structure) (where is what)
+I have followed multiple resources to get to my current grasp & understanding over the DSA. I have/had no guidance for most of this. Wherever I’ve been inspired or guided by mentor/someone’s content, I’ve mentioned it clearly to keep it FAIR yeah.
 
 ---
 
-## Get Started
+
+## Straight To The Bussiness
+ 
+1. [Best Resources & Sequence](#resources-and-sequence) I would've followed if I were to start from a begining.
+2. My step by step [DSA cheatsheet](#dsa-cheatsheet)
+3. [Contribution](#contribution) (You can contribute too)
+
+---
+
+
+## Resources and Sequence
+
+1. Reality check of an Interview Preparation. [THE BEST TECH INTERVIEW GUIDE SO FAR](https://github.com/yangshun/tech-interview-handbook)
+
+2. Best explanation [Alvin the GOAT](https://structy.net/) of fundamental Data Structures, he will make your fundamentals super strong, trust me with this ONE!
+
+3. Recommended by my mentor [Rishi Prakash](https://www.linkedin.com/in/rishi-prakash-developer/): [Core DSA Patterns with Step-by-Step LeetCode Problems](https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews/). Honestly, my personal favorite for mastering DSA patterns.
+
+4. [NeetCode 250](https://neetcode.io/practice?tab=neetcode250): A curated set of Leetcode problems with optimal solutions & clear explanations.
+
+---
+
+
+## DSA Cheatsheet
+
+**Each Data Structure is explained alongside patterns around each & appropriate Leetcode questions.**
+
+>I found this GOD-LIKE approach in this [GOAT'ED Github Repository](https://github.com/yangshun/tech-interview-handbook). I have also made few good changes which suited my learning style, I'd suggest to have your own opinions on this!
+
+| Topic              | Priority  |
+|--------------------|-----------|
+| Array              | **High** |
+| String             | **High** |
+| Hash Table         | **Mid** |
+| Sorting            | **High** |
+| Binary Search      | **High** |
+| Linked List        | **Mid** |
+| Recursion          | **Mid** |
+| Stack              | **Mid** |
+| Tree               | **High** |
+| Graph              | **High** |
+| Heap               | **Mid** |
+| Queue              | **Mid** |
+| Trie               | **Mid** |
+| Dynamic Programming| **Low** |
+
+
+---
+
+
+## Contribution
+
 1. Clone repository:
 
-   `git clone https://github.com/<your-username>/dsa-patterns-handbook.git`
+   `git clone https://github.com/DominiK037/dsa-patterns-handbook.git`
 
 
 2. Navigate to local repository
@@ -28,7 +74,7 @@ Key points
 
 3. Create a new branch
 
-   `git checkout -b <branch-name-with-set-conventions>`
+   `git checkout -b <branch-name>`
 
 
 4. Make changes & commit
@@ -36,7 +82,7 @@ Key points
    ````markdown
     git add .
 
-    git commit -m "<commit-message-with-set-conventions>"
+    git commit -m "<commit-message>"
    ````
 
 
@@ -44,7 +90,7 @@ Key points
 
    ````markdown
     # Add a remote repo (if haven't already)
-    git remote add origin https://github.com/<your-username>/dsa-patterns-handbook.git
+    git remote add origin https://github.com/DominiK037/dsa-patterns-handbook.git
 
     # Push the changes made
     git push -u origin main
@@ -53,116 +99,15 @@ Key points
 6. Make a Pull Request with your own style, so I can copy your style if I like it😏
 
 
-7. Wow, Congratulations🥂🎉
-
-    You just made a contribution to save the **Humanity**!
+7. Congrats & Thanks, I will look into your PR & merge 🎉
 ---
 
-## Git Guidelines
-
-This repository follows simplified, professional Git conventions optimized for an educational codebase where clarity, topic organization, and clean history matter more than complex release flows.
-
-### Branching Model
-
-We use a lightweight trunk-based model with short-lived feature branches.
+**Branching Model**
 
 * `main` → Always stable and contains verified, reviewed patterns.
 * `pattern/` → For adding new **patterns**, **questions**, explanations.
 * `docs/` → For updates to documentation (README, pattern markdowns).
 * `refactor/` → For restructuring code or renaming folders or optimised logic.
 * `chore/` → For minor housekeeping tasks like `.gitignore` or config updates.
-* `experiment/` → For testing alternate solutions or approaches temporarily.
 
-> ⚠️ Branches should be short-lived and merged quickly to keep history linear and clean.
-
-
-### Branch Naming Rules
-
-* Use lowercase, hyphen-separated words.
-* Prefix branch with its purpose (`pattern/`, `docs/`, etc.).
-* Optionally include topic name or DSA concept.
-
-Examples:
-- `pattern/arrays-sliding-window`
-- `pattern/dp-knapsack`
-- `docs/update-readme`
-- `refactor/rename-dp-folder`
-- `chore/setup-gitignore`
-
-
-### Commit Message Conventions
-
-- We follow the Conventional Commits format, simplified for algorithmic documentation.
-
-   ````markdown
-    <type>(<scope>): <short description>
-    <optional-details/explanation>
-   ````
-
----
-
-## Pattern Template
-
-Use this template when adding new patterns or problems.
-
-````markdown
-
-[Pattern]: pattern name
-
-- When to recognize: signals/shape of input
-
-- Brute force baseline: O(…) & why it’s too slow
-
-- Core idea: one key invariant/insight
-
-- Algorithm (steps): step by step explanation
-  
-- Complexity: Time O(?), Space O(?) + add line by line explanation for both.
-  
-- Edge cases: list of edge cases
-  
-- Variants: when this pattern breaks / common twists
-  
-- Code (Java): short, clean implementation  
-
-- Thoughts: Your relevant thoughts around this specific pattern/question
-
-````
----
-
-## Goals
-To be smooth in pattern recognition and algorithmic reasoning rather than memorization.
-
-Every problem included here focuses on:
-- Identifying the underlying pattern.
-- Explaining the reasoning path.
-- Writing clean, optimized code.
-- Time & Space complexities.
-
----
-
-## Repository Structure
-> This will keep changing as per my learnings (Every day)
-
-````markdown
-
-dsa-patterns-handbook/
-├── src/
-│   └── main/
-│       └── java/
-│           └── com/
-│               └── rushikesh/
-│                   └── dsa/
-│                       ├── arrays/
-│                       ├── binarysearch/
-│                       ├── dp/
-│                       ├── graphs/
-│                       ├── linkedlist/
-│                       ├── queues/
-│                       ├── stacks/
-│                       ├── strings/
-│                       └── trees/
-
-
-````
 ---
