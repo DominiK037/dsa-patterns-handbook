@@ -1,3 +1,7 @@
+package array.mergeintervals.leetcode;
+
+import java.util.*;
+
 class MeetingRooms252 {
     public static boolean canAttendMeetings(int[][] intervals) {
         //  Sort intervals with their startTime.

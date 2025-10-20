@@ -1,3 +1,7 @@
+package array.mergeintervals.leetcode;
+
+import java.util.*;
+
 class InsertInterval {
     public static int[][] insert(int[][] intervals, int[] newInterval) {
         List<int[]> validIntervals = new ArrayList<>();

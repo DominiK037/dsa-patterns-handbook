@@ -1,3 +1,7 @@
+package array.mergeintervals.leetcode;
+
+import java.util.*;
+
 class MergeIntervals56 {
     public static int[][] merge(int[][] intervals) {
         //  Sort intervals with their startTime.
@@ -15,7 +19,7 @@ class MergeIntervals56 {
             if (previousEnd >= start) {
                 mergedIntervals.getLast()[1] = Math.max(previousEnd, end);
             } else {
-                mergedIntervals.add(new int[][]  start, end});
+                mergedIntervals.add(new int[] {start, end});
             }
         }
 
