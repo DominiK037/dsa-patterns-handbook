@@ -1,3 +1,7 @@
+package array.mergeintervals.leetcode;
+
+import java.util.*;
+
 class NonOverlappingIntervals435 {
     public static int eraseOverlapIntervals(int[][] intervals) {
         Arrays.sort(intervals, (interval1, interval2) -> Integer.compare(interval1[0], interval2[0]));

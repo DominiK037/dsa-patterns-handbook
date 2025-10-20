@@ -1,3 +1,7 @@
+package array.mergeintervals.leetcode;
+
+import java.util.*;
+
 class IntervalListIntersections986 {
     public static int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
         List<int[]> intersections = new ArrayList<>();

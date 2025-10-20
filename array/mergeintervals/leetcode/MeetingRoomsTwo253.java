@@ -1,3 +1,7 @@
+package array.mergeintervals.leetcode;
+
+import java.util.*;
+
 class MeetingRoomsTwo253 {
     public static int minMeetingRooms(int[][] intervals) {
         int totalMeetings = intervals.length;
