@@ -37,10 +37,12 @@
     - **[Merge Sort](/sorting/mergesort/MergeSort.md)**
     - **[Quick Sort](/sorting/quicksort/QuickSort.md)**
     - **Heap Sort**
-    - **[Counting Sort](/sorting/countingsort/CountingSort.md)**
-    - **Radix Sort**
 
-- Low ROI
+- Good to know. I don't find them very useful. (Personal opinion based on a time criteria)
+    - **[Counting Sort](/sorting/countingsort/CountingSort.md)** (Non-comparing sorting)
+    - **[Radix Sort](/sorting/radixsort/RadixSort.md)** (Non-comparing sorting)
+
+- Low ROI (Just know them, I probably won't spend my time explaining these here)
     - Bubble Sort
     - Selection Sort
     - Insertion Sort
