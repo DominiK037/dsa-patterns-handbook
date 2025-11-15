@@ -3,11 +3,12 @@ package sorting.mergesort;
 public class LeetCode912 {
     //  Test the merge sort implementation
     public static void main(String[] args) {
-        int[] nums = {5, 1, 1, 2, 0, 0};
+        //  Test cases
+        int[] nums = {};
         int[] nums1 = {1};
         int[] nums2 = {3, 2, 1, 5, 6, 4};
         int[] nums3 = {38, 27, 43, 3, 9, 82, 10};
-        int[] nums4 = {};
+        int[] nums4 = {5, 1, 1, 2, 0, 0};
 
         mergeSort(nums4);
 
@@ -54,7 +55,7 @@ public class LeetCode912 {
         //  Separate indices to track positions in original, left and right arrays
         int originalIndex = 0, leftIndex = 0, rightIndex = 0;
 
-        //  As long as there are elements in both left & right arrays, we will continue merging
+        //  Break when either left or right array becomes empty
         while (leftIndex < leftArrayLength && rightIndex < rightArrayLength) {
             //  For ease of reading
             int leftElement = leftArray[leftIndex];
@@ -79,3 +80,7 @@ public class LeetCode912 {
         }
     }
 }
+
+// Time Complexity: O(n log n) beacuse mergeSort divides the collection into halves (log n levels) and merge merges elements at each level (n work per level).
+
+// Space Complexity: O(n) because it needs extra space to store temporary arrays during merging, roughly equal to the input size.
