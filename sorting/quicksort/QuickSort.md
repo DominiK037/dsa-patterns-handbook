@@ -2,6 +2,7 @@
 
 # Quick Sort
 
+
 ### Pivot Selection
 
 - Quicksort needs one element as the pivot.
@@ -73,3 +74,11 @@
 - Space Complexity:
     - Average -> `O(log n)`, because the pivot selection results in a nearly balanced tree.
     - Worst -> `O(n)`, call stack grows as deep as the number of elements.
+
+### Resources
+
+- [Understand QuickSort inside & out.](https://www.youtube.com/watch?v=Vtckgz38QHs)
+
+- Make sure to create a mental model for worst case too .i.e sorted input.
+
+- [Explained Code](/sorting/quicksort/QuickSort.java)

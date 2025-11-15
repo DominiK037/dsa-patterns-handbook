@@ -35,9 +35,9 @@
 
 - High ROI
     - **[Merge Sort](/sorting/mergesort/MergeSort.md)**
-    - **Quick Sort**
+    - **[Quick Sort](/sorting/quicksort/QuickSort.md)**
     - **Heap Sort**
-    - **Counting Sort**
+    - **[Counting Sort](/sorting/countingsort/CountingSort.md)**
     - **Radix Sort**
 
 - Low ROI
