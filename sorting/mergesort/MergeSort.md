@@ -50,4 +50,6 @@
 
 - **Factors:** Stable, Recursive, Out-of-Place
 
-- [LeetCode | 912 | Sort an array | Medium |](https://leetcode.com/problems/sort-an-array/description/)
+- Only [Merge Sort Explanation](https://www.youtube.com/watch?v=3j0SWDX4AtU) you are seeking.
+
+- LeetCode | [Sort an array (912) ](https://leetcode.com/problems/sort-an-array/description/)| Medium | [Solution](/sorting/mergesort/LeetCode912.java) |
