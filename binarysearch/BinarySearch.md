@@ -16,6 +16,15 @@
     - If the target is larger, search the right half of the middle.
     - Keep halving until the target is found or the range becomes empty.
 
-- **Time Complexity:** `O(log N)`  because we halve the search range each step.
+- **Time Complexity:** `O(log N)` because we halve the search range each step.
 
 - **Space Complexity:** `O(1)` because we only use a few variables, no extra data structures.
+
+- Resources I followed:
+    1. Watch any good tutorial on a YouTube, binary seach is easy to learn!
+
+    2. Basic binary search questions:
+
+        1. [Search Insert Position (35)](https://leetcode.com/problems/search-insert-position/description/) | LeetCode | Easy | [Solution](/binarysearch/leetcode/LeetCode35.java) |
+
+    3. Pattern: [Modified Binary Search](/binarysearch/modifiedbinarysearch/ModifiedBinarySearch.md)
