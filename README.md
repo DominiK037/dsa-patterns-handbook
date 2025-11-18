@@ -41,10 +41,10 @@ I have followed multiple resources to get to my current grasp & understanding ov
 
 | Topic | Priority |
 |--------|-----------|
-| [Array](array/Array.md) | **High*** |
-| [String](string/String.md) | **High*** |
+| [Array](array/Array.md) | **High** |
+| [String](string/String.md) | **High** |
 | [Hash Table](hashtable/HashTable.md) | **Mid** |
-| [Sorting](sorting/Sorting.md) | **High*** |
+| [Sorting](sorting/Sorting.md) | **High** |
 | [Binary Search](binarysearch/BinarySearch.md) | **High** |
 | [Linked List](linkedlist/LinkedList.md) | **Mid** |
 | [Recursion](recursion/Recursion.md) | **Mid** |

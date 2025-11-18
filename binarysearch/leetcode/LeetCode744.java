@@ -2,22 +2,23 @@ package binarysearch.leetcode;
 
 public final class LeetCode744 {
     public static char nextGreatestLetter(char[] letters, char target) {
+        int totalLetters = letters.length;
         int start = 0;
-        int end = letters.length - 1;
+        int end = totalLetters - 1;
 
         while (start <= end) {
             int midIndex = start + (end - start) / 2;
             char midValue = letters[midIndex];
             
             //  We are not checking for equality here, as we need to find the smallest letter greater than target. Which we are doing by placing the left & right pointers accordingly.
-            if (midValue < target) {    //  Search in the right half.
-                start = midIndex + 1;
-            } else {                       //  Search in the left half.
+            if (target < midValue) {    //  Search in the left half.
                 end = midIndex - 1;
+            } else {    //  Search in the right half.
+                start = midIndex + 1;
             }
         }
         //  If target is greater than or equal to the last element, return the first element.
-        return letters[start % letters.length];
+        return letters[start % totalLetters];
     }
 }
 
