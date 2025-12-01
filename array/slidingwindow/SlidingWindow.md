@@ -130,3 +130,21 @@ This is the essence of sliding window.
 
 - **Time complexity:** O(n), because we are visiting each element once.
 - **Space complexity:** O(k), k is the size of window, because we are saving k number of elements in a map to track their frequencies
+
+---
+
+## Resources I followed in sequence
+
+1. [Sliding Window Mental Model by Ryan Schachet](https://youtu.be/MK-NZ4hN7rs?si=Qc_G3bCuYifsoLMc) (Thank me later for this one!)
+2. [Best sliding window explanation with questions](https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews/blob/main/%E2%9C%85%20%20Pattern%2001%20%3A%20Sliding%20Window.md)(Must visit this repo, and follow along with the questions)
+3. | Easy | [Leetcode 643 - Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | [**Solution**](./leetcode/LeetCode643.java) |
+4. | Medium | [Leetcode 209 - Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [**Solution**](./leetcode/LeetCode209.java) |
+5. | Medium | [Leetcode 340 - Longest Substring with K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/description/) | [**Solution**](./leetcode/LeetCode340.java) |
+6. | Medium | [Leetcode 904 - Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | [**Solution**](./leetcode/LeetCode904.java) |
+7. | Medium | [Leetcode 03 - Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [**Solution**](./leetcode/LeetCode03.java) |
+8. | Medium | [Leetcode 424 - Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [**Solution**](./leetcode/LeetCode424.java) |
+9. | Medium | [Leetcode 1004 - Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | [**Solution**](./leetcode/LeetCode1004.java) |
+10. | Medium | [Leetcode 567 - Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [**Solution**](./leetcode/LeetCode567.java) |
+11. | Medium | [Leetcode 438 - Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [**Solution**](./leetcode/LeetCode438.java) |
+12. | Hard | [Leetcode 76 - Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [**Solution**](./leetcode/LeetCode76.java) | *Good Question To Revise* |
+13. | Hard | [Leetcode 30 - Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | [**Solution**](./leetcode/LeetCode30.java) |
