@@ -95,3 +95,11 @@ Use this pattern immediately if you see these signs:
   - Use `<` if the pointers should never cross or overlap (e.g., Two Sum).
   - Use `<=` if the pointers can meet at the middle (e.g., Squares of Sorted Array).
 - **Infinite Loops:** In Fast & Slow pointers, ensure your `Fast` pointer checks for `null` (or end of bounds) before jumping two steps to avoid crashing.
+
+-----
+
+## Resources I followed
+
+- I learned this pattern from [Chanda-Abdul's Repository](https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews/blob/main/%E2%9C%85%20%20Pattern%2002%3A%20Two%20Pointers.md) suggested by my mentor [Rishi Prakash](https://www.linkedin.com/in/rishi-prakash-developer/)
+
+- I will add questions with answers as I solve them again!
