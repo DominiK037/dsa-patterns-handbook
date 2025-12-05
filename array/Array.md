@@ -67,11 +67,14 @@
 
 ## Patterns
 
-1. [Two Pointers](./twopointer/TwoPointer.md)
-2. [Sliding Window](./slidingwindow/SlidingWindow.md)
-3. Sorting
-4. Prefix sum (Precomputations)
-5. Hashing (This is more like appying the data structure & less of pattern)
-6. [Merge Intervals](mergeintervals/MergeIntervals.md)
+- [Two Pointers](./twopointer/TwoPointer.md)
+- [Sliding Window](./slidingwindow/SlidingWindow.md)
+- [Cyclic Sorting](./cyclicsort/CyclicSort.md)
+- [Merge Intervals](mergeintervals/MergeIntervals.md)
+
+**I don't consider the below as patterns but they are important fundamentals that are frequently used with arrays:**
+
+- Prefix sum (Precomputations)
+- Hashing (This is more like appying the data structure & less of pattern)
 
 ---
