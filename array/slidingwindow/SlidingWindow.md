@@ -1,4 +1,6 @@
-# Sliding Window — Quick Revision Handbook
+[← Back](/array/Array.md)
+
+# Sliding Window
 
 - Sliding Window is a pattern used when you want to process a **contiguous range** (subarray/subsequence) inside an array or string while scanning it only once.  
 - Think of it like a small frame that moves left → right, expanding or shrinking depending on conditions.
