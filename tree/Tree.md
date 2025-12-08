@@ -1,151 +1,90 @@
-# Trees
+# Tree Fundamentals
 
-- A Tree is a hierarchical data structure made up of a connected nodes.
+**A Tree is a graph without cycles.** Unlike Arrays or Linked Lists (linear), Trees are hierarchical. This means you cannot iterate through them easily with a simple `for` loop.
 
-- It is an undirected, connected and acyclic [graph](/graph/Graph.md), meaning there’s exactly one path between any two nodes. This structure allows natural use of recursion, as each node itself can be treated as the root of it's own subtree.
+* **Recursion is King:** Since every node is the "root" of its own subtree, $99\%$ of tree solutions use recursion.
+* **Binary Trees Rule:** In interviews, you will almost exclusively deal with **Binary Trees** (max 2 children).
 
-- **Node Types**
+-----
 
-    A node in a tree can be:
-    1. **Root Node:** Has no parent, can or can't have children.
-    2. **Parent Node:** Has one parent and one or more children.
-    3. **Child Node:** Has exactly one parent.
+## The Anatomy (Key Terminology)
 
-    > Nodes can store any data type: `int`, `String`, or `Node<T>`.
+You must speak the language of trees fluently. Mixing up "Height" and "Depth" suggests you don't understand the structure.
 
-- **Types of Trees**
-    1. Binary Trees.
-    2. Ternary Trees.
-    3. N-Ary Trees (N children).
+| Term | Definition | Visual / Note |
+| :--- | :--- | :--- |
+| **Root** | The top-most node. No parent. | The entry point of the tree. |
+| **Leaf** | A node with NO children. | The "bottom" of the tree. |
+| **Sibling** | Nodes that share the same Parent. | `Left` and `Right` children are siblings. |
+| **Ancestor** | Any node "above" the current node. | Parent, Grandparent, etc. |
+| **Descendant** | Any node "below" the current node. | Child, Grandchild, etc. |
+| **Depth** | Distance from **Root $\to$ Node**. | Top-down. Root is Depth 0. |
+| **Height** | Distance from **Node $\to$ Deepest Leaf**. | Bottom-up. Leaf is Height 0. |
 
-> As per the [Tech Interview Handbook](https://www.techinterviewhandbook.org/algorithms/tree/), ternary and n-ary trees are not common in interviews. You can explore them further only if you’re personally interested.
+### Visualization
 
-
-## Common terms
-
-- **Edge:** The connection (or link) between two nodes.
-
-- **Neighbour:** A directly connected node — either a parent or a child.
-
-- **Sibling:** Nodes that share the same parent.
-
-- **Ancestor:** Any node that exists one or more levels 'above' the current node.
-
-- **Descendant:** Any node that exists one or more levels 'below' the current node.
-
-- **Subtree:** A smaller tree formed by any node and all its descendants.
-
-- **Depth/Levels/Height (Vertical View):** Number of edges from the root node to the target node.
-
-- **Width (Horizontal View):** Number of nodes present on a particular level.
-
-### Visualization:
-
-````
-       A (Root)
+```text
+       A (Root, Depth: 0)
       / \
-     B   C
+     B   C  (Siblings)
     / \   \
-   D   E   F
-````
+   D   E   F (Leaves, Height: 0)
+```
 
-- Root: `A`
+* **Subtree:** Node `B` is the root of the subtree `B-D-E`.
+* **Path:** There is exactly **one** unique path between any two nodes (e.g., $D \to B \to A \to C$).
 
-- Leaves: `D`, `E`, `F`
+-----
 
-- Siblings: `B` and `C`
+## The Variants (Binary Trees)
 
-- Ancestors of **E**: `B`, `A`
+A **Binary Tree** enforces one rule: **Max 2 children per node.** However, the *arrangement* of nodes determines performance.
 
-- Descendants of **B**: `D`, `E`
+### 1. Complete Binary Tree
 
-- Depth of **F**: `2` (A `→` C `→` F) [Count edges]
+**Logic:** Think "Tetris." You fill every level completely. The last level must be filled strictly **Left to Right**.
 
-- Width at Level 2: 3 nodes (`D`, `E`, `F`) [We start levels from 0 just like an array index]
+* **Why it matters:** This structure is mandatory for **Heaps** (Priority Queues). It ensures the tree is compact and array-mappable.
 
+### 2. Balanced Binary Tree
 
-## Binary Trees
+**Logic:** The "Ideal" Tree. The height difference between Left and Right subtrees is $\le 1$ for *every* node.
 
-- Exactly 1 root node.
-- At most 2 children per node.
-- Exactly 1 path between the **Root** Node -> **Any** Node.
+* **Why it matters:** Ensures $O(\log N)$ search/insert/delete. If a tree is balanced, you discard half the nodes at every step of a search.
 
-### Learnings from [stucty.net](https://structy.net/problems/binary-tree-intro)
+### 3. Skewed Binary Tree (The Trap)
 
-- Tree with **SINGLE** or **NO** node is also the binary tree.
-- Use parent-child relationship when describing the relationships among the nodes.
-- Use leaf nodes while talking about the end nodes which don't have any children.
-- It is common to set children using `null`(No children) or `node.left`, `node.right` for any parent node.
+**Logic:** The "Worst" Tree. Every node has only one child (all left or all right).
 
-### Binary Tree Terms
+* **Why it matters:** Structurally, this is a **Linked List**. All tree advantages are lost. Complexity degrades to $O(N)$.
 
-1. **Complete Binary Tree:** 
+-----
 
-    - Every level is completely filled, except possibly the last!
+## Complexity Analysis (The Trade-offs)
 
-    - All nodes on the last level are as far left as possible.
-    
-    - Example:
+| Operation | Balanced (Best Case) | Skewed (Worst Case) | Why? |
+| :--- | :--- | :--- | :--- |
+| **Search** | $O(\log N)$ | $O(N)$ | Balanced cuts search space in half. Skewed checks every node. |
+| **Insertion** | $O(\log N)$ | $O(N)$ | You must find the correct spot, which takes Height time. |
+| **Deletion** | $O(\log N)$ | $O(N)$ | Same as search; depends on tree height. |
+| **Traversal** | $O(N)$ | $O(N)$ | You must visit every node to print/process it, regardless of shape. |
 
-        ````
-                1
-               / \
-              2   3
-             / \
-            4   5
-        ````
-        > Here, every level except the last is full, and the last one is filled from left to right. So it’s complete.
+-----
 
-2. **Balanced Binary Tree:** 
+## Common Pitfalls
 
-    - Here we care about height balance, not about left-to-right filling.
+* **The "Null" Edge Case:** A tree can be empty (`root == null`). A tree can have one node. Your code **must** handle `if (root == null)` immediately, or you will get a NullPointerException.
+  * **Confusing Binary Tree vs. BST:**
+    * **Binary Tree:** Just a shape. Data can be random ($5, 100, 2$).
+    * **Binary Search Tree (BST):** Sorted data. Left $<$ Root $<$ Right.
+    * *Warning:* Never assume a tree is sorted unless the problem explicitly says "BST".
+  * **Height vs. Depth Confusion:**
+    * Calculate **Depth** by passing `depth + 1` *down* into the recursive call.
+    * Calculate **Height** by returning `max(left, right) + 1` *up* from the recursive call.
 
-    - The difference in height between left and right subtrees at every node ≤ 1.
-
-    - It keeps operations like search, insert, and delete **fast (≈ O(log n)).**
-
-    - Example:
-
-        ````
-                 1
-                / \
-               2   3
-              / \   \
-             4   5   6
-                      \
-                       7
-        ````
-        > Left and right subtrees differ in height by at most one everywhere. So it’s balanced. But it’s not complete because the last level isn’t filled left-to-right.
-
-- **In easy words**
-    - A **complete tree** ensures all **levels are filled from left to right**.
-    - A **balanced tree** ensures **both sides stay roughly the same height**.
-
-
-## Time Complexities
-
-| **Operation**          | **Best / Avg (Balanced)** | **Worst (Skewed)** | **Notes / Explanation**                                                                  |
-| ---------------------- | ------------------------- | ------------------ | ---------------------------------------------------------------------------------------- |
-| **Search**             | `O(log n)`                | `O(n)`             | In a balanced tree, we skip half nodes each step. In a skewed tree, we check every node. |
-| **Insertion**          | `O(log n)`                | `O(n)`             | Balanced trees keep height short, so inserting is faster.                                |
-| **Deletion**           | `O(log n)`                | `O(n)`             | Works like insertion — faster when tree height is balanced.                              |
-| **Traversal**          | `O(n)`                    | `O(n)`             | Every node must be visited once — same for all trees.                                    |
-| **Height Calculation** | `O(n)`                    | `O(n)`             | We go through all nodes once to find height.                                             |
-
-
-> A skewed tree is a type of binary tree that is completely unbalanced — all the nodes go in one direction, either only to the left or only to the right. It looks more like a linked list than a tree.
-
-Example (Left skew)
-
-````
-        1
-       /
-      2
-     /
-    3
-````
+-----
 
 ## Patterns
 
-1. Breadth First Search (BFS)
-2. Depth First Search (DFS)
+1. [DFS Traversal (Preorder, Inorder, Postorder)](./dfs/DepthFirstSearch.md)
+2. [BFS Traversal (Level Order)](./bfs/BreadthFirstSearch.md)
